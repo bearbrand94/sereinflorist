@@ -1,12 +1,6 @@
 @extends('layouts.master')
-
 @section('css')
 <style type="text/css">
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-}
-
 .masthead {
   height: 100vh;
   min-height: 500px;
@@ -15,109 +9,17 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}    
-.double-border {
-    border-width:3px;  
-    border-style:double;
-    border-color:rgba(109,110,112,0.5);
-    background-color: white;
+}      
+a{
+  color: rgb(128, 128, 128);
 }
-
-.separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
+.card-deck > .small-card
+{
+    flex-wrap: wrap;
+    flex: initial; 
 }
-.separator::before, .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid rgba(109,110,112,0.5);
-}
-.separator::before {
-    margin-right: .25em;
-}
-.separator::after {
-    margin-left: .25em;
-}
-
-nav a{
-    color: black;
-    font-family: 'Questrial';
-    color: rgba(109,110,112,1);
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: 0.3em;
-}
-
-.serein-card{
-    background-color: white;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.2rem;
-}
-
-.serein-card-small{
-    color: rgba(109,110,112,1);
-    font-size: 0.9rem;
-}
-.serein-button{
-    /*background-color: rgba(225, 158, 153, 0.66);*/
-    color: rgba(109,110,112,1);
-    font-family: 'Questrial';
-    font-size: 1rem;
-    letter-spacing: 0.15em;
-    border-radius: 0.1rem;
-    cursor: pointer;
-}
-
-.serein-button2{
-    border: 2px solid #e19e99;  
-    color: rgba(99,100,102,1);
-    font-size: 0.8rem;
-    letter-spacing: 0.25em;
-    cursor: pointer;
-    text-transform: uppercase;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-.serein-button2:hover {
-  background-color: #e19e99;
-  color: white;
-}
-
-.h-lead{
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
-
-.copyright{
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.4rem;
-}
-
-.slider {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-}
-.slide {
-  width: 150px;
-  flex-shrink: 0;
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
 </style>
 @endsection
-
 @section('body')
 <!-- Full Page Image Header with Vertically Centered Content -->
 <div class="masthead">
@@ -133,6 +35,11 @@ nav a{
                             Nature-inspired floral design for weddings
                             and special events</p>
                             <p class="lead pt-4" style="color: gray; font-size: 1.1rem; margin-bottom: 0;"><i>Scroll Down!</i></p>
+                            <p class="lead pt-4" style="color: gray; font-size: 0.8rem; margin-bottom: 0;">Follow Us On:</p>
+                            <p class="lead" style="color: gray; font-size: 1.25rem; margin-bottom: 0;">
+                              <a href="https://www.instagram.com/sereinflorist/" target="_blank"><i class="fa fa-instagram"></i></a>
+                              <a href="https://wa.me/6282232222688" target="_blank"><i class="fa fa-whatsapp ml-2"></i></a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -141,18 +48,9 @@ nav a{
     </div>
 </div>
 
-<nav class="navbar navbar-expand-sm justify-content-center sticky-top" style="background-color: white;">
-    <div class="separator text-muted d-sm-none" style="width: 100%">
-      <a class="nav-link" href="#">Menu</a>
-    </div>
-    <div class="separator text-muted d-none d-sm-flex" style="width: 100%">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">Portfolio</a>
-      <a class="nav-link" href="#">Gallery</a>
-      <a class="nav-link" href="#">Blog</a>
-      <a class="nav-link" href="#">Contact</a>
-    </div>
-</nav>
+@component('components.navbar')
+
+@endcomponent
 
 <!-- BODY -->
 <div class="container-fluid bg-light pb-4">
@@ -172,7 +70,7 @@ nav a{
                         <h3 class="font-weight-light">YOUR FLORAL JOURNEY STARTS HERE</h3>
                         <hr>
                         <p class="lead">
-                           Serein Florist creates breath-taking, upscale floral designs in an effort to infuse simple beauty into a world that needs it.  We execute events with the utmost reliability and precision while maintaining an organic, forward thinking approach.
+                            Serein Florist is a floral artisan based in Surabaya. At Serein Florist, all of our floral arrangements are handcrafted passionately with love - and also as an expression of love for preserving every occasion using only premium blooms.
                         </p>
                     </div>
                     <div class="serein-button p-2">
@@ -203,58 +101,25 @@ nav a{
         =================================
      -->
     <div class="row col-12 col-md-12 col-lg-10 col-xl-7 mx-auto" style="padding: 0px; margin: 0px;">
-        @for($i=0; $i<3; $i++)
-        <div class="col-12 col-md-4 pt-4">
-            <div class="p-2 serein-card">
-                <div class="card-body text-center double-border">
-                    <div class="card-body" style="padding: 0">
-                        <div class="img-responsive">
-                            <img class="img-fluid img-thumbnail" src="http://placehold.it/275x350"></img>
-                        </div>
-                        <hr>
-                        <p class="lead">
-                           POSITIVE LUXURY
-                        </p>
-                        <p class="serein-card-small">
-                            We are proud recipients of the Positive Luxury Butterfly Mark for making a measurable impact and commitment to sustainability.
-                        </p>
-                    </div>
-                    <div class="serein-button2 p-2">
-                        <span class="mr-2 ml-2">Learn More</span>
-                    </div>
-                </div>
-            </div>
+        <div class="card-deck"> 
+        @component('components.small-card', [
+            'title' => 'Bouquet',
+            'description' => 'Bespoke hand tied flowers arrangement suitable for anniversaries, graduations, Valentine ’s Day, birthdays, etc.'
+        ])
+        @endcomponent
+        @component('components.small-card', [
+            'title' => 'Box & Vase Arrangement',
+            'description' => 'Flower arrangements can be used as centerpieces to beautify your home or office. Another great way to say congratulations for grand openings, new baby born, etc.'
+        ])
+        @endcomponent
+        @component('components.small-card', [
+            'title' => 'Eternelle Collections',
+            'description' => 'Everlasting gifts, something that can be kept and remembered forever.'
+        ])
+        @endcomponent
         </div>
-        @endfor
     </div>
 
-    <!--
-        =================================
-                    PORTFOLIO
-        =================================
-     -->
-    <div class="row align-items-center mt-4 pt-4">
-        <div class="col-12 mx-auto">
-            <div class="text-center">
-                <h3 class="font-weight-light">THE PORTFOLIO</h3>
-                <p class="h-lead">Find out more about our featured works</p>
-            </div>
-        </div>
-    </div>
-    <!--
-        =================================
-                PORTFOLIO CARDS
-        =================================
-     -->
-    <div class="row col-12 col-md-12 col-lg-10 col-xl-7 mx-auto" style="padding: 0px; margin: 0px;">
-        @for($i=0; $i<8; $i++)
-        <div class="col-12 col-md-3 pt-4">
-            <div class="text-center">
-            <img class="img-fluid img-thumbnail" src="http://placehold.it/275x350"></img>
-            </div>
-        </div>
-        @endfor
-    </div>
 </div>
 
 <!-- FOOTER -->
@@ -274,16 +139,10 @@ nav a{
                     <span class="mr-2 ml-2"><i class="fa fa-instagram"></i> sereinflorist</span>
                 </a>
                 <ul class="list-group list-group-flush mt-4">
+
                     <li class="list-group-item">
-                        <div class="slider">
-                        @for($i=0; $i<20; $i++)
-                        <img src="http://placehold.it/150x150" class="slide mr-1"></img>
-                        @endfor
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        @for($i=0; $i<5; $i++)
-                        <p class="lead"><a href="#" class="h-lead">OUR STORY</a></p>
+                        @for($i=0; $i<1; $i++)
+                        <p class="lead"><a href="#" class="h-lead">TERMS & CONDITIONS</a></p>
                         @endfor
                     </li>
                 </ul>
@@ -292,8 +151,4 @@ nav a{
         </div>
     </div>
 </div>
-@endsection
-
-@section('script')
-
 @endsection

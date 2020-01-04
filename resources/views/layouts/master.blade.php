@@ -5,14 +5,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>Wedding And Event Florist | Serein Florist Surabaya</title>
+    <meta description="Serein Florist creates inspired flowers for weddings and special occasion events.">
+    <meta keywords="florist, florist surabaya, serein, serein florist">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/serein.css')}}">
     <title>@yield('title')</title>
 
     @yield('css')
+    <meta name="google-site-verification" content="1Gp4HJVJ7o7FzUUR0TB9xLJrxqCLv9vC_-kS4nbcpuk" />
   </head>
   <body>
     @yield('body')
