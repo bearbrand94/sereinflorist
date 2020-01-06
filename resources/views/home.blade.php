@@ -49,7 +49,6 @@ a{
 </div>
 
 @component('components.navbar')
-
 @endcomponent
 
 <!-- BODY -->
@@ -102,21 +101,23 @@ a{
      -->
     <div class="row col-12 col-md-12 col-lg-10 col-xl-7 mx-auto" style="padding: 0px; margin: 0px;">
         <div class="card-deck"> 
-        @component('components.small-card', [
-            'title' => 'Bouquet',
-            'description' => 'Bespoke hand tied flowers arrangement suitable for anniversaries, graduations, Valentine ’s Day, birthdays, etc.'
-        ])
-        @endcomponent
-        @component('components.small-card', [
-            'title' => 'Box & Vase Arrangement',
-            'description' => 'Flower arrangements can be used as centerpieces to beautify your home or office. Another great way to say congratulations for grand openings, new baby born, etc.'
-        ])
-        @endcomponent
-        @component('components.small-card', [
-            'title' => 'Eternelle Collections',
-            'description' => 'Everlasting gifts, something that can be kept and remembered forever.'
-        ])
-        @endcomponent
+            @component('components.small-card', [
+                'title' => 'Bouquet',
+                'description' => 'Bespoke hand tied flowers arrangement suitable for anniversaries, graduations, Valentine ’s Day, birthdays, etc.'
+            ])
+            @endcomponent
+
+            @component('components.small-card', [
+                'title' => 'Box & Vase Arrangement',
+                'description' => 'Flower arrangements can be used as centerpieces to beautify your home or office. Another great way to say congratulations for grand openings, new baby born, etc.'
+            ])
+            @endcomponent
+
+            @component('components.small-card', [
+                'title' => 'Eternelle Collections',
+                'description' => 'Everlasting gifts, something that can be kept and remembered forever.'
+            ])
+            @endcomponent
         </div>
     </div>
 
@@ -142,7 +143,7 @@ a{
 
                     <li class="list-group-item">
                         @for($i=0; $i<1; $i++)
-                        <p class="lead"><a href="#" class="h-lead">TERMS & CONDITIONS</a></p>
+                        <p class="lead mt-2"><a href="#" class="h-lead">TERMS & CONDITIONS</a></p>
                         @endfor
                     </li>
                 </ul>

@@ -16,4 +16,15 @@ Route::get('/', function () {
 });
 Route::get('/wip', function () {
     return view('home');
-});
+})->name('home');
+Route::get('/wedding', function() {
+	return view('services.wedding');
+})->name('wedding');
+
+Route::get('/decoration', function() {
+	return view('services.decoration');
+})->name('decoration');
+
+Route::get('/gallery', function() {
+	return view('gallery');
+})->name('gallery');

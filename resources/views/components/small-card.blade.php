@@ -1,4 +1,3 @@
-
 <div class="col-12 col-md-4 pt-4 pb-4 small-card">
     <div class="p-2 serein-card" style="height: 100%;">
         <div class="card-body text-center double-border" style="height: 100%">
