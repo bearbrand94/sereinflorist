@@ -12,10 +12,13 @@
                 <h3 class="font-weight-light">GALLERY</h3>
                 <div class="row mt-4">
                 @for($i=0; $i<12; $i++)
-                <div class="col-12 col-md-4 d-flex mb-4">
-                    <div class="col-12">
-                    <img class="img-fluid mx-auto" src="https://via.placeholder.com/275x400.png"></img>
-                    </div>
+                <div class="col-12 col-md-4">
+                    <figure class="figure">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x350.png"></img>
+                    <figcaption class="figure-caption text-left">
+                        <p class="lead">[ImageName]</p>
+                    </figcaption>
+                    </figure>
 
                 </div>
                 @endfor
