@@ -28,3 +28,11 @@ Route::get('/decoration', function() {
 Route::get('/gallery', function() {
 	return view('gallery');
 })->name('gallery');
+
+Route::get('/eternelle', function() {
+	return view('eternelle');
+})->name('eternelle');
+
+Route::get('/contact', function() {
+	return view('contact');
+})->name('contact');

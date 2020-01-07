@@ -20,6 +20,11 @@ a{
 }
 </style>
 @endsection
+
+@section('title')
+    Wedding And Event Florist
+@endsection
+
 @section('body')
 <!-- Full Page Image Header with Vertically Centered Content -->
 <div class="masthead">
@@ -123,33 +128,4 @@ a{
 
 </div>
 
-<!-- FOOTER -->
-<div class="container-fluid">
-    <!--
-        =================================
-                FOLLOW US
-        =================================
-     -->
-    <div class="row align-items-center mt-4 pt-4 mb-4">
-        <div class="col-12 mx-auto">
-            <div class="text-center">
-                <h2 class="font-weight-light mb-4" style="color: #f79d69;">
-                    <Strong>FOLLOW US ON INSTAGRAM!</Strong>
-                </h2>
-                <a class="serein-button2 p-2" href="https://www.instagram.com/sereinflorist/" target="_blank">
-                    <span class="mr-2 ml-2"><i class="fa fa-instagram"></i> sereinflorist</span>
-                </a>
-                <ul class="list-group list-group-flush mt-4">
-
-                    <li class="list-group-item">
-                        @for($i=0; $i<1; $i++)
-                        <p class="lead mt-2"><a href="#" class="h-lead">TERMS & CONDITIONS</a></p>
-                        @endfor
-                    </li>
-                </ul>
-                <p class="copyright mt-4">©2019 SEREINFLORIST</p>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

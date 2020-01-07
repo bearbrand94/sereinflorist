@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('css')
-
+@section('title')
+ Gallery
 @endsection
 @section('body')
     @component('components.navbar')
@@ -14,12 +14,11 @@
                 @for($i=0; $i<12; $i++)
                 <div class="col-12 col-md-4">
                     <figure class="figure">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x350.png"></img>
+                    <img class="img-fluid" src="https://via.placeholder.com/275x350.png"></img>
                     <figcaption class="figure-caption text-left">
                         <p class="lead">[ImageName]</p>
                     </figcaption>
                     </figure>
-
                 </div>
                 @endfor
                 </div>

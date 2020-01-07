@@ -15,7 +15,7 @@
       </div>
       <!-- <a class="nav-link" href="#">Services</a> -->
       <a class="nav-link" href="{{route('gallery')}}">Gallery</a>
-      <a class="nav-link" href="#">Eternelle</a>
-      <a class="nav-link" href="#">Contact us</a>
+      <a class="nav-link" href="{{route('eternelle')}}">Eternelle</a>
+      <a class="nav-link" href="{{route('contact')}}">Contact us</a>
     </div>
 </nav>

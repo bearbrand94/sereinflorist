@@ -1,6 +1,6 @@
 @extends('layouts.service')
 @section('title')
-DECORATION
+ Decoration Service
 @endsection
 @section('content')
 <p class="lead text-center">
