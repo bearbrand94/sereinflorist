@@ -35,7 +35,7 @@
                         <div class="row mt-2">
                             <div class="col-12 col-md-6">
                                 <p class="footer-lead">TERMS & CONDITIONS</p>
-                                <hr>
+
                             </div>
 
                             <div class="col-12 col-md-6">

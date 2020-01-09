@@ -105,7 +105,7 @@ a{
         =================================
      -->
     <div class="row col-12 col-md-12 col-lg-10 col-xl-7 mx-auto" style="padding: 0px; margin: 0px;">
-        <div class="card-deck"> 
+        <!-- <div class="card-deck">  -->
             @component('components.small-card', [
                 'title' => 'Bouquet',
                 'description' => 'Bespoke hand tied flowers arrangement suitable for anniversaries, graduations, Valentine ’s Day, birthdays, etc.'
