@@ -6,12 +6,13 @@
       <a class="nav-link" href="{{route('home')}}">Home</a>
       <div class="dropdown">
         <a class="nav-link" href="#" data-toggle="dropdown">
-          Services <i class="fa fa-angle-down"></i>
+          Services 
+          <!-- <i class="fa fa-angle-down"></i> -->
         </a>
-        <div class="dropdown-menu">
+<!--         <div class="dropdown-menu">
           <a class="dropdown-item" href="{{route('decoration')}}">Decoration</a>
           <a class="dropdown-item" href="{{route('wedding')}}">Wedding</a>
-        </div>
+        </div> -->
       </div>
       <!-- <a class="nav-link" href="#">Services</a> -->
       <a class="nav-link" href="{{route('gallery')}}">Gallery</a>
@@ -20,20 +21,34 @@
     </div>
 </nav>
 
-<div class="modal" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-full" role="document">
-        <div class="modal-content h-100">
-          <div class="modal-body d-flex align-content-center flex-wrap">
-            <div class="mx-auto text-center">
-              <a class="nav-link" href="{{route('home')}}">Home</a>
 
+<style type="text/css">
+  #menuModal a{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 0.3em;
+    font-family: 'Questrial';
+  } 
+</style>
+<div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-full" role="document">
+        <div class="modal-content h-100 p-2">
+            <div class="modal-body d-flex align-content-center flex-wrap double-border">
+              <div style="position: absolute; right: 5%">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="font-size: 1.8rem;">&times;</span>
+                </button>
+              </div>
+              <div class="text-center mx-auto">
+                  <a class="nav-link" href="{{route('home')}}">Home</a>
+                  <!-- <a class="nav-link" href="{{route('decoration')}}">Service</a> -->
                   <a class="nav-link" href="{{route('decoration')}}">Decoration</a>
                   <a class="nav-link" href="{{route('wedding')}}">Wedding</a>
-              <a class="nav-link" href="{{route('gallery')}}">Gallery</a>
-              <a class="nav-link" href="{{route('eternelle')}}">Eternelle</a>
-              <a class="nav-link" href="{{route('contact')}}">Contact us</a>
-
-              <button type="button" class="btn btn-secondary mt-2" data-dismiss="modal">Close Menu</button>
+                  <a class="nav-link" href="{{route('gallery')}}">Gallery</a>
+                  <a class="nav-link" href="{{route('eternelle')}}">Eternelle</a>
+                  <a class="nav-link" href="{{route('contact')}}">Contact us</a>
+              </div>
             </div>
           </div>
         </div>

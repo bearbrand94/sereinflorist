@@ -39,7 +39,7 @@ a{
                             <p class="lead">
                             Nature-inspired floral design for weddings
                             and special events</p>
-                            <p class="lead pt-4" style="color: gray; font-size: 1.1rem; margin-bottom: 0;"><i>Scroll Down!</i></p>
+                            <!-- <p class="lead pt-4" style="color: gray; font-size: 1.1rem; margin-bottom: 0;"><i>Scroll Down!</i></p> -->
                             <p class="lead pt-4" style="color: gray; font-size: 0.8rem; margin-bottom: 0;">Follow Us On:</p>
                             <p class="lead" style="color: gray; font-size: 1.25rem; margin-bottom: 0;">
                               <a href="https://www.instagram.com/sereinflorist/" target="_blank"><i class="fa fa-instagram"></i></a>

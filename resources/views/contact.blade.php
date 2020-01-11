@@ -112,7 +112,7 @@ input, textarea{
                 </div>
 
                 <div class="row text-left">
-                  <div class="col-12 col-md-5 col-lg-6 mb-3 mb-sm-0">
+                  <div class="col-12 col-md-6 mb-3 mb-sm-0">
                     <div class="card-body double-border general-inquiry h-100">
                       <h3 class="h2-lead text-center">Get In Touch</h3>
                       <hr>
@@ -138,7 +138,7 @@ input, textarea{
                               </div>
                             </a>
                             <div>
-                              <p class="mb-0 social-p">Call Us:</p>
+                              <p class="mb-0 social-p">WhatsApp:</p>
                               <a href="https://wa.me/6282232222688" target="_blank" class="social-a">0822-3222-2688</a>
                             </div>
                           </div>
@@ -150,22 +150,22 @@ input, textarea{
                             </a>
                             <div>
                               <p class="mb-0 social-p">Email Us:</p>
-                              <a href="https://www.instagram.com/sereinflorist/" target="_blank" class="social-a">adm@sereinflorist.com</a>
+                              <a href="https://www.instagram.com/sereinflorist/" target="_blank" class="social-a">sereinflorist@gmail.com</a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-7 col-lg-6">
+                  <div class="col-12 col-md-6">
                     <div class="card-body double-border h-100">
                       <h3 class="h2-lead text-center">Leave Us A Message</h3>
                       <hr>
                       <div class="row">
-                        <div class="col-12 col-md-6 mb-3 mb-sm-0">
+                        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                           <input type="text" class="form-control" name="" placeholder="YOUR NAME">
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                           <input type="text" class="form-control" name="" placeholder="YOUR EMAIL">
                         </div>
                       </div>
