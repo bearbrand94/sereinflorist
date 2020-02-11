@@ -30,7 +30,7 @@ p{
 .banner {
   height: 100vh;
   min-height: 500px;
-  background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url("{{asset('/images/image1.jpeg')}}");
+  background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url("{{asset('/images/eternelle/headbanner.jpg')}}");
 
   background-size: cover;
   background-position: center;
@@ -43,7 +43,7 @@ p{
 }
 
 .banner-left {
-  background:linear-gradient(to right,rgba(233,233,233,1), rgba(233,233,233,1) 40%,rgba(255,255,255,0.3)),url("{{asset('/images/image1.jpeg')}}");
+  background:linear-gradient(to right,rgba(233,233,233,1), rgba(233,233,233,1) 40%,rgba(255,255,255,0.3)),url("{{asset('/images/eternelle/headbanner.jpg')}}");
   color: black;
   background-size: cover;
   background-position: center;
@@ -51,7 +51,7 @@ p{
 }
 
 .banner-right {
-  background:linear-gradient(to left,rgba(245,245,245,1), rgba(235,235,235,1) 40%,rgba(255,255,255,0.3)),url("{{asset('/images/image1.jpeg')}}");
+  background:linear-gradient(to left,rgba(245,245,245,1), rgba(235,235,235,1) 40%,rgba(255,255,255,0.3)),url("{{asset('/images/eternelle/rosebear.jpg')}}");
   color: black;
   background-size: cover;
   background-position: center;
@@ -72,7 +72,7 @@ p{
     <div class="container h-100">
         <div class="row align-items-center h-100">
             <div class="col-12 col-md-9 col-lg-7 mx-auto text-center">
-                <img class="img-fluid mb-4" src="https://via.placeholder.com/100x100.png"></img>
+                <img class="img-fluid rounded-circle mb-4" src="{{asset('/images/logotransparent.png')}}" style="height: 100px; width: 100px; background-color: white;"></img>
                 <h1 class="h-lead">SEREIN FLORIST</h1>
                 <h2 class="h3-lead">ETERNELLE</h2>
             </div>

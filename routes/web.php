@@ -12,11 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('comingsoon');
+    return view('home');
 });
 Route::get('/wip', function () {
     return view('home');
 })->name('home');
+
 Route::get('/wedding', function() {
 	return view('services.wedding');
 })->name('wedding');
@@ -36,3 +37,11 @@ Route::get('/eternelle', function() {
 Route::get('/contact', function() {
 	return view('contact');
 })->name('contact');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/terms', function () {
+    return view('home');
+})->name('terms');

@@ -4,7 +4,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url("{{asset('/images/image1.jpeg')}}");
+  background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url("{{asset('/images/home.jpg')}}");
 
   background-size: cover;
   background-position: center;
@@ -17,6 +17,11 @@ a{
 {
     flex-wrap: wrap;
     flex: initial; 
+}
+
+.font-weight-light{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 </style>
 @endsection
@@ -34,12 +39,12 @@ a{
                 <div class="card h-100 justify-content-center p-2">
                     <div class="card-body text-center double-border">
                         <div class="card-body">
-                            <h2 class="font-weight-light">Serein Florist</h2>
+                            <h2 class="font-weight-light">SEREIN FLORIST</h2>
                             <hr>
                             <p class="lead">
                             Nature-inspired floral design for weddings
                             and special events</p>
-                            <!-- <p class="lead pt-4" style="color: gray; font-size: 1.1rem; margin-bottom: 0;"><i>Scroll Down!</i></p> -->
+                            <a class="lead pt-4" style="color: gray; font-size: 0.8rem; margin-bottom: 0;" href="wip#anchor-start"><i>Scroll Down!</i></a>
                             <p class="lead pt-4" style="color: gray; font-size: 0.8rem; margin-bottom: 0;">Follow Us On:</p>
                             <p class="lead" style="color: gray; font-size: 1.25rem; margin-bottom: 0;">
                               <a href="https://www.instagram.com/sereinflorist/" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -63,10 +68,10 @@ a{
          YOUR FLORAL JOURNEY STARTS HERE
         =================================
      -->
-    <div class="row align-items-center pt-5">
+    <div class="row align-items-center pt-5" id="anchor-start">
         <div class="col-12 col-md-7 col-xl-6 mx-auto">
             <div class="text-center" style="margin-bottom: -40px; z-index: 1;">
-                <img class="rounded-circle" src="http://placehold.it/80x80"></img>
+                <img class="rounded-circle" src="{{asset('/images/logotransparent.png')}}" style="height: 80px; width: 80px; background-color: white;"></img>
             </div>
             <div class="p-2 serein-card">
                 <div class="card-body text-center double-border">
@@ -78,7 +83,7 @@ a{
                         </p>
                     </div>
                     <div class="serein-button p-2">
-                        <span class="separator mr-2 ml-2"><span class="mr-2 ml-2">More About Us</span></span>
+                        <span class="separator mr-2 ml-2"><a class="mr-2 ml-2" href="{{route('about')}}">More About Us</a></span>
                     </div>
                 </div>
             </div>
@@ -108,19 +113,25 @@ a{
         <!-- <div class="card-deck">  -->
             @component('components.small-card', [
                 'title' => 'Bouquet',
-                'description' => 'Bespoke hand tied flowers arrangement suitable for anniversaries, graduations, Valentine ’s Day, birthdays, etc.'
+                'description' => 'Bespoke hand tied flowers arrangement suitable for anniversaries, graduations, Valentine ’s Day, birthdays, etc.',
+                'link' => "https://www.instagram.com/stories/highlights/18071433844065758/",
+                'image' => asset('/images/bouquet.jpg')
             ])
             @endcomponent
 
             @component('components.small-card', [
                 'title' => 'Box & Vase Arrangement',
-                'description' => 'Flower arrangements can be used as centerpieces to beautify your home or office. Another great way to say congratulations for grand openings, new baby born, etc.'
+                'description' => 'Flower arrangements can be used as centerpieces to beautify your home or office. Another great way to say congratulations for grand openings, new baby born, etc.',
+                'link' => "https://www.instagram.com/stories/highlights/18005615830191628/",
+                'image' => asset('/images/boxvase.jpg')
             ])
             @endcomponent
 
             @component('components.small-card', [
                 'title' => 'Eternelle Collections',
-                'description' => 'Everlasting gifts, something that can be kept and remembered forever.'
+                'description' => 'Everlasting gifts, something that can be kept and remembered forever.',
+                'link' => route('eternelle'),
+                'image' => asset('/images/eternelle-collections.jpg')
             ])
             @endcomponent
         </div>

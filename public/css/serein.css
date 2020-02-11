@@ -1,31 +1,27 @@
 <style type="text/css">
+
 @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
 }
-.vertical-center {
-  height:100%;
-  width:100%;
 
-  text-align: center;  /* align the inline(-block) elements horizontally */
-  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+/*Custom Font for this template*/
+h1, h2, .font-weight-light{
+  font-family: 'Playfair Display', serif;
 }
 
-.vertical-center:before {    /* create a full-height inline block pseudo=element */
-  content: " ";
-  display: inline-block;
-  vertical-align: middle;    /* vertical alignment of the inline element */
-  height: 100%;
+p, .h3-lead, .lead, .copyright{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
 }
 
-.vertical-center > .container {
-  max-width: 100%;
-
-  display: inline-block;
-  vertical-align: middle;  /* vertical alignment of the inline element */
-                           /* reset the font property */
-  font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+.lead, p{
+  font-size: 0.9rem;
 }
+.nav-link{
+  font-family: 'Playfair Display';
+}
+/*End Custom Font*/
 
 .modal-full {
     min-width: 100%;
@@ -62,7 +58,6 @@
 
 nav a{
     color: black;
-    font-family: 'Questrial';
     color: rgba(109,110,112,1);
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -102,9 +97,9 @@ nav a{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 
-bottom:   0;
+bottom: 0;
 }
-.serein-button2:hover {
+.serein-button2:hover, .serein-button2:focus {
   background-color: #e19e99;
   color: white;
 }
@@ -112,9 +107,24 @@ bottom:   0;
 .h-lead{
     font-size: 1rem;
     font-weight: 300;
-    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+
+p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+.banner {
+  height: 100vh;
+  min-height: 500px;
+  background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url("{{asset('/images/image1.jpeg')}}");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}   
 
 .footer-lead{
     font-size: 0.8rem;

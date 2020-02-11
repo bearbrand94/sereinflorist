@@ -4,7 +4,7 @@
 .h-lead{
     font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
 
@@ -28,7 +28,7 @@ p{
 }
 
 .banner {
-  min-height: 100vh;
+  min-height: 1300px;
   background:linear-gradient(0deg,rgba(233,233,233,0.7),rgba(245,245,245,0.8)),url("{{asset('/images/image6.jpeg')}}");
 
   background-size: cover;
@@ -38,7 +38,7 @@ p{
 
 @media only screen and (min-width: 768px) {
   .banner {
-    height: 100vh;
+    min-height: 100vh;
   } 
 }
 
@@ -106,7 +106,7 @@ input, textarea{
         <div class="row align-items-center h-100">
             <div class="col-12 col-md-11 col-lg-10 mx-auto text-center"> 
                 <div class="mb-4 pb-2">
-                  <img class="img-fluid mb-4" src="https://via.placeholder.com/100x100.png"></img>
+                <img class="img-fluid rounded-circle mb-4" src="{{asset('/images/logotransparent.png')}}" style="height: 100px; width: 100px; background-color: white;"></img>
                   <h1 class="h-lead">SEREIN FLORIST</h1>
                   <h2 class="h3-lead">Contact Us</h2>
                 </div>
@@ -150,7 +150,7 @@ input, textarea{
                             </a>
                             <div>
                               <p class="mb-0 social-p">Email Us:</p>
-                              <a href="https://www.instagram.com/sereinflorist/" target="_blank" class="social-a">sereinflorist@gmail.com</a>
+                              <a href="mailto:sereinflorist@gmail.com?Subject=Hello, Serein Florist" target="_blank" class="social-a">sereinflorist@gmail.com</a>
                             </div>
                           </div>
                         </div>
@@ -184,4 +184,5 @@ input, textarea{
         </div>
     </div>
 </div>
+
 @endsection
